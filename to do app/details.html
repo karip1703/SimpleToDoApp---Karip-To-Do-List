@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Görev Detayları</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="details">
+  <nav class="details-nav">
+    <button class="go-back" id="goBackBtn">← Geri</button>
+    <h1>Plan Detayları</h1>
+    <button id="darkModeToggle">🌓</button>
+  </nav>
+
+  <div id="detailsContainer">
+    <h2 id="taskTitle">Plan Adı</h2>
+    <form id="detailsForm">
+      <label for="purpose">Amaç</label>
+      <input type="text" name="purpose" />
+
+      <label for="person">Sorumlu Kişi</label>
+      <input type="text" name="person" />
+
+      <label for="date">Tarih</label>
+      <input type="date" name="date" />
+
+      <label for="status">Durum</label>
+      <select name="status">
+        <option value="Hazırlık">Hazırlık</option>
+        <option value="Devam">Devam</option>
+        <option value="Tamamlandı">Tamamlandı</option>
+      </select>
+
+      <label for="progress">İlerleme (%)</label>
+      <input type="number" name="progress" min="0" max="100" />
+
+      <label for="image">Fotoğraf</label>
+      <input type="file" name="image" accept="image/*" />
+      <img id="imagePreview" style="display: none;" />
+
+      <button type="button" id="saveBtn">Kaydet</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

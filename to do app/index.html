@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr" data-page="index">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Görev Listesi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="index">
+  <nav>
+    <div class="nav-left">
+      <input type="text" id="searchInput" placeholder="Görev ara..." />
+      <button id="searchButton">🔍</button> <!-- Arama Butonu -->
+    </div>
+    <div class="nav-right">
+      <button id="darkModeToggle">🌙</button> <!--Dark Mode Butonu-->
+    </div>
+  </nav>
+
+  <section id="taskFormContainer">
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Yeni görev girin" required />      <!-- Yeni Plan Ekleme -->
+      <button type="submit">Görev Ekle</button>
+    </form>
+  </section>
+
+  <main>
+    <ul id="taskList"></ul> <!-- Plan Listesi -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

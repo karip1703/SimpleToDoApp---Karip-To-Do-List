@@ -1,0 +1,209 @@
+/* GENEL */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark {
+  background: #1e1e1e;
+  color: #f2f2f2;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* NAVBAR */
+nav {
+  background: #4a90e2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav input[type="text"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+}
+
+nav button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark nav button {
+  background-color: #444;
+  color: #444;
+}
+
+.dark nav button:hover {
+  background-color: #666;
+}
+
+nav button:hover {
+  background-color: #0056b3;
+}
+.dark nav {
+  background: #333;
+}
+
+.dark nav input {
+  background: white;
+  color: #444;
+}
+
+.dark nav button {
+  background: #444;
+  color: #333;
+}
+
+/* GÖREV FORMU */
+#taskFormContainer {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+#taskForm {
+  display: flex;
+  gap: 1rem;
+}
+
+#taskForm input {
+  padding: 0.6rem;
+  width: 250px;
+}
+
+#taskForm button {
+  padding: 0.6rem 1.2rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark #taskForm button {
+  background: #6ca0ff;
+}
+
+/* LİSTE */
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  max-width: 600px;
+}
+
+#taskList li {
+  background: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dark #taskList li {
+  background: #2b2b2b;
+}
+
+#taskList li.completed {
+  background-color: #d4edda; /* yeşilimsi bir arka plan */
+  color: #155724;
+  font-weight: bold;
+}
+
+.dark #taskList li.completed {
+  background-color: #264d36;
+  color: #a8e6b1;
+}
+
+
+/* DETAYLAR */
+#detailsContainer {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+#detailsForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#detailsForm input,
+#detailsForm select {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  color: #333;
+}
+
+.dark #detailsForm input,
+.dark #detailsForm select {
+  background: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+#detailsForm button {
+  padding: 0.6rem 1rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark #detailsForm button {
+  background: #6ca0ff;
+}
+
+#imagePreview {
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* DETAY NAVBAR */
+nav.details-nav {
+  justify-content: space-between;
+}
+
+.go-back {
+  background: white;
+  color: #4a90e2;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+.dark .go-back {
+  background: #eee;
+  color: #333;
+}
